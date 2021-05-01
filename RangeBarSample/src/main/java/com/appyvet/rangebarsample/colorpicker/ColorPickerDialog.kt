@@ -17,7 +17,6 @@ package com.appyvet.rangebarsample.colorpicker
 
 import android.app.AlertDialog
 import android.app.Dialog
-import android.app.DialogFragment
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View

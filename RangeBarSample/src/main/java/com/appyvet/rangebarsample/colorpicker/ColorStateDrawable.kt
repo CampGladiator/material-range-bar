@@ -20,6 +20,8 @@ import android.graphics.Color
 import android.graphics.PorterDuff
 import android.graphics.drawable.Drawable
 import android.graphics.drawable.LayerDrawable
+import androidx.core.graphics.BlendModeColorFilterCompat
+import androidx.core.graphics.BlendModeCompat
 
 /**
  * A drawable which sets its color filter to a color specified by the user, and changes to a
@@ -35,9 +37,10 @@ class ColorStateDrawable(layers: Array<Drawable?>?, private val mColor: Int) : L
             }
         }
         if (pressedOrFocused) {
-            super.setColorFilter(getPressedColor(mColor), PorterDuff.Mode.SRC_ATOP)
+
+            super.setColorFilter(BlendModeColorFilterCompat.createBlendModeColorFilterCompat(getPressedColor(mColor), BlendModeCompat.SRC_ATOP))
         } else {
-            super.setColorFilter(mColor, PorterDuff.Mode.SRC_ATOP)
+            super.setColorFilter(BlendModeColorFilterCompat.createBlendModeColorFilterCompat(mColor, BlendModeCompat.SRC_ATOP))
         }
         return super.onStateChange(states)
     }

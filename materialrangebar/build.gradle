@@ -27,7 +27,7 @@ ext {
     siteUrl = 'https://github.com/ozzy4654/material-range-bar'
     gitUrl = 'https://github.com/ozzy4654/material-range-bar.git'
 
-    libraryVersion = '1.5.2'
+    libraryVersion = '1.5.3'
 
     developerId = 'krazykira'
     developerName = 'Sheraz Ahmed Khilji'
@@ -59,9 +59,8 @@ android {
 }
 
 dependencies {
-    implementation 'androidx.core:core:1.3.1'
-    implementation "androidx.core:core-ktx:1.3.1"
-    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+    implementation "androidx.core:core-ktx:1.3.2"
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk8:$kotlin_version"
 }
 
 /**

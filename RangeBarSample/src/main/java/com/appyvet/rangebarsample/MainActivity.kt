@@ -76,7 +76,7 @@ class MainActivity : FragmentActivity(), OnColorSelectedListener {
         // Gets the RangeBar
         rangebar = findViewById(R.id.rangebar1)
         rangeButton.setOnClickListener { rangebar!!.setRangeBarEnabled(!rangebar!!.isRangeBar) }
-        disabledButton.setOnClickListener { rangebar!!.setEnabled(!rangebar!!.isEnabled()) }
+        disabledButton.setOnClickListener { rangebar!!.isEnabled = !rangebar!!.isEnabled }
 
         // Sets the display values of the indices
         rangebar!!.setOnRangeBarChangeListener(object : OnRangeBarChangeListener {

@@ -37,8 +37,8 @@ class ColorPickerPalette : TableLayout {
     private var mMarginSize = 0
     private var mNumColumns = 0
 
-    constructor(context: Context?, attrs: AttributeSet?) : super(context, attrs) {}
-    constructor(context: Context?) : super(context) {}
+    constructor(context: Context?, attrs: AttributeSet?) : super(context, attrs)
+    constructor(context: Context?) : super(context)
 
     /**
      * Initialize the size, columns, and listener.  Size should be a pre-defined size (SIZE_LARGE
