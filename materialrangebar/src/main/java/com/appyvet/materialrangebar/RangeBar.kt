@@ -135,6 +135,12 @@ class RangeBar : View {
         mRightThumb!!.x = marginLeft + rightIndex / (tickCount - 1).toFloat() * barLength
         mRightThumb!!.setXValue(getPinValue(rightIndex))
 
+        mListener!!.onRangeChangeListener(this, leftIndex, rightIndex,
+                getPinValue(leftIndex),
+                getPinValue(rightIndex))
+
+        invalidate()
+
     }
 
     /**
