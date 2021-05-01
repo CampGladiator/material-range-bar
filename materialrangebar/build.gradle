@@ -27,7 +27,7 @@ ext {
     siteUrl = 'https://github.com/ozzy4654/material-range-bar'
     gitUrl = 'https://github.com/ozzy4654/material-range-bar.git'
 
-    libraryVersion = '1.5.3'
+    libraryVersion = '1.5.4'
 
     developerId = 'krazykira'
     developerName = 'Sheraz Ahmed Khilji'
